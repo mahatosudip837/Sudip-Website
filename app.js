@@ -1,3 +1,4 @@
+alert("lets see sudip mahato portfolio");
 const openMenu = document.querySelector('.open');
 const closeMenu =document.querySelector('.close');
 const navbar = document.querySelector('nav ul');
@@ -8,3 +9,5 @@ openMenu.addEventListener('click',()=>{
 closeMenu.addEventListener('click',()=>{
     navbar.classList.remove('active');
 })
+
+
