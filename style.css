@@ -21,7 +21,7 @@ body{
 }
 .open,.close{
     font-size: 40px;
-    color: #000;
+    color: #fff;
     display: none;
 }
 nav{
