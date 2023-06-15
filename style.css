@@ -39,11 +39,19 @@ nav{
 }
 .logo{
     font-size: 3rem;
-    text-shadow: 8px 8px 8px #000;
-}
-.logo span{
+    font-weight: 700;
     text-transform: uppercase;
-    color: rgb(0, 81, 255);
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    background: url(./images/back.png);
+    -webkit-background-clip: text;
+    background-position: 0;
+    animation: text 20s linear infinite;
+}
+@keyframes text{
+    100%{
+        background-position: 2000px;
+    }
 }
 nav ul li{
     display: inline-block;
@@ -246,7 +254,7 @@ nav .fa-solid{
 
 /* -----------contact----------- */
 #contact{
-    padding: 40px 10%;
+    padding: 80px 10%;
 }
 .contact-left{
     flex-basis: 35%;
