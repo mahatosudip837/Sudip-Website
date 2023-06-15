@@ -135,7 +135,7 @@ nav .fa-solid{
 }
 .tab-titles{
     display: flex;
-    margin: 20px 0 40px;
+    padding: 20px 0 20px;
 }
 .tab-links{
     margin-right: 50px;
@@ -319,6 +319,9 @@ form textarea{
     .header-text h1{
         font-size: 45px;
     }
+    .header-text h1 span{
+        font-size: 50px;
+    }
 }
 @media screen and (max-width:922px){
     .header-text h1{
@@ -360,15 +363,36 @@ form textarea{
     .row{
         justify-content: center;
     }
+    .header-text h1 span{
+        font-size: 40px;
+    }
+    .about-col-1,.about-col-2{
+        flex-basis: 100%;
+        padding: 10px;
+    }
 }
 @media screen and (max-width:618px){
     .header-text{
         font-size: 20px;
+        padding-top: 47%;
     }  
     .header-text h1{
         font-size: 20px;
     } 
     #header{
-        min-height: 50vh;
+        min-height: 70vh;
+        padding-bottom: 40px;
+    }
+    .header-text h1 span{
+        font-size: 34px;
+    }
+    .logo{
+        font-size: 2rem;
+    }
+    .tab-links{
+        margin-right: 27px;
+    }
+    .contact-left,.contact-right{
+        flex-basis: 100%;
     }
 }
