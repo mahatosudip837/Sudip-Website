@@ -174,7 +174,7 @@ nav .fa-solid{
 
 /* -------services------------------ */
 #services{
-    padding: 30px 10%;
+    padding: 80px 10%;
 }
 .services-list{
     display: grid;
@@ -213,7 +213,7 @@ nav .fa-solid{
 }
 /* ----------portfolio----------- */
 #portfolio{
-    padding: 50px 10%;
+    padding: 80px 10%;
 }
 .work-list{
     display: grid;
