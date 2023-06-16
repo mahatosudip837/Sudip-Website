@@ -267,6 +267,8 @@ nav .fa-solid{
     margin-top: 40px;
     cursor: pointer;
     transition: all .5s ease;
+}.git i{
+    color: #66ff00;
 }
 .git a{
     text-decoration: none;
@@ -274,6 +276,11 @@ nav .fa-solid{
 }
 .git:hover{
     background: #1ad401e3;
+}
+.git:hover i{
+    position: relative;
+    left: 10px;
+    color: #a80077;
 }
 
 /* -----------contact----------- */
