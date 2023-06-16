@@ -170,6 +170,10 @@ nav .fa-solid{
     bottom: -8px;
     transition: 0.5s;
 }
+.tab-links.active-link{
+    color: #ff004f;
+
+}
 .tab-links.active-link::after{
     width: 50%;
 }
