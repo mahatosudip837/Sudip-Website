@@ -259,6 +259,18 @@ nav .fa-solid{
     transform: scale(1.1);
     background: rgb(255, 0, 43);
 }
+.git{
+    margin-top: 40px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.git a{
+    text-decoration: none;
+    color: #fff;
+}
+.git:hover{
+    background: #1ad401e3;
+}
 
 /* -----------contact----------- */
 #contact{
@@ -410,5 +422,11 @@ form textarea{
     }
     .contact-left,.contact-right{
         flex-basis: 100%;
+    }
+    .git{
+        width: 100%;
+    }
+    .git a{
+        font-size: 14px;
     }
 }
