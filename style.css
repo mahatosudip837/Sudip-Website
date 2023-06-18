@@ -116,7 +116,7 @@ nav ul li a.active::after{
     font-size: 30px;
     cursor: pointer;
     text-shadow: none;
-    background: linear-gradient(45deg, #ff0000, #0059ff, #ff00f3, #0a1a00, #16bffd,#a80077);
+    background: linear-gradient(45deg,#ff0000, #ffff00, #ff00f3, #66ff00, #16bffd,#ffff);
     -webkit-background-clip: text;
     -webkit-text-stroke: 2px transparent;
     background-size: 400%;
