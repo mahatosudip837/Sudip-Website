@@ -26,8 +26,8 @@
             </nav>
             <div class="header-text">
                 <p>Web Designer</p>
-                <h1>Hi, I'm <span>Sudip Mahato</span><br> From West-Bengal</h1>
-                <h2>Date & Time </h2>
+                <h1>Hi, I'm <span>Sudip Mahato</span><br> From WestBengal</h1>
+                <h2>Date & Time: </h2>
                 <h3 id="watch"></h3>
             </div>
         </div>
@@ -152,23 +152,13 @@
     <!-- --------footer--------- -->
     <footer id="copyright">
         <p>Copyright &copy Sudip 2023 </p>
+        <div class="up-icon">
+            <a href="#header"><ion-icon name="arrow-up-outline" class="up"></ion-icon></a>
+        </div>
     </footer>
 
-    <script>
-        let tablinks = document.getElementsByClassName("tab-links");
-        let tabcontents = document.getElementsByClassName("tab-contents");
-
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link")
-            }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab")
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab")
-        }
-    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="app.js"></script>

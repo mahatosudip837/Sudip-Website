@@ -355,12 +355,25 @@ form textarea{
     cursor: pointer;
 }
 #copyright{
+    position: relative;
     width: 100%;
     text-align: center;
     padding: 25px 0;
     background: rgb(80, 70, 70);
     font-weight: 300;
     margin-top: 20px;
+}
+.up-icon a{
+    color: #fff;
+}
+.up-icon .up{
+    position: absolute;
+    top: 15%;
+    right: 5%;
+    border: 2px solid #fff;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 20px;
 }
 
 @media screen and (max-width:1228px){

@@ -7,6 +7,8 @@ const navlinks = document.querySelectorAll('#header nav a');
 const work = document.querySelectorAll('.work');
 const servicesBox = document.querySelector('.services-box');
 const watch = document.querySelector('#watch');
+const tablinks = document.getElementsByClassName("tab-links");
+const tabcontents = document.getElementsByClassName("tab-contents");
 
 // navbar responsive ----------------------
 
@@ -60,3 +62,16 @@ setInterval(()=>{
     let time = new Date().toLocaleString();
     watch.innerHTML = time;
 },1000)
+
+// skill section -------------------
+
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link")
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab")
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab")
+}
