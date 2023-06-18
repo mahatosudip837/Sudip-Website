@@ -11,6 +11,11 @@ body{
     background: #080808;
     color: #fff;
 }
+.newBtn{
+    border: 1px solid #000;
+    outline: none;
+    background: transparent;
+}
 #header{
     width: 100%;
     min-height: 100vh;
@@ -38,6 +43,7 @@ nav{
     border-bottom: 1px solid #fff;
 }
 .logo{
+    cursor: pointer;
     font-size: 3rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -107,6 +113,8 @@ nav ul li a.active::after{
     animation: animate 10s linear infinite;
 }
 .header-text #watch{
+    font-size: 30px;
+    cursor: pointer;
     text-shadow: none;
     background: linear-gradient(45deg, #ff0000, #0059ff, #ff00f3, #0a1a00, #16bffd,#a80077);
     -webkit-background-clip: text;
