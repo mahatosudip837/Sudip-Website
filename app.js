@@ -9,6 +9,7 @@ const servicesBox = document.querySelector('.services-box');
 const watch = document.querySelector('#watch');
 const tablinks = document.getElementsByClassName("tab-links");
 const tabcontents = document.getElementsByClassName("tab-contents");
+const watchBtn = document.querySelector('#watch-btn');
 
 // navbar responsive ----------------------
 
@@ -57,11 +58,13 @@ servicesBox.addEventListener('mouseleave',()=>{
 })
 
 // watch show -------------
-
-setInterval(()=>{
-    let time = new Date().toLocaleString();
-    watch.innerHTML = time;
-},1000)
+const showdate = ()=>{
+    setInterval(()=>{
+        let time = new Date().toLocaleString();
+        watch.innerHTML = time;
+    },1000)
+}
+watchBtn.addEventListener('click',showdate);
 
 // skill section -------------------
 
