@@ -395,6 +395,9 @@ form textarea{
     .header-text h1{
         font-size: 30px;
     }
+    #header{
+        min-height: 60vh;
+    }
     .open,.close{
         display: block;
     }
@@ -448,12 +451,10 @@ form textarea{
         font-size: 20px;
     } 
     #header{
-        min-height: 70vh;
         padding-bottom: 40px;
-        background: url('https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=869&q=80');
+        background: url('https://cache.careers360.mobi/media/presets/860X430/article_images/2022/6/7/Advanced-Front-End-Web-Development-with-React-by-Coding-Ninjas.webp');
         background-size: cover;
         background-position: center;
-        background-attachment: fixed;
     }
     .header-text #watch{
         font-size: 16px;
