@@ -3,7 +3,12 @@ const openMenu = document.querySelector('.open');
 const closeMenu =document.querySelector('.close');
 const navbar = document.querySelector('nav ul');
 const sections = document.querySelectorAll('section');
-const navlinks = document.querySelectorAll('#header nav a')
+const navlinks = document.querySelectorAll('#header nav a');
+const work = document.querySelectorAll('.work');
+const servicesBox = document.querySelector('.services-box');
+const watch = document.querySelector('#watch');
+
+// navbar responsive ----------------------
 
 openMenu.addEventListener('click',()=>{
     navbar.classList.add('active');
@@ -11,10 +16,12 @@ openMenu.addEventListener('click',()=>{
 closeMenu.addEventListener('click',()=>{
     navbar.classList.remove('active');
 })
+// from validation alert massage show  --------------------
 
 function validateForm(){
     alert("Your Massage Submited.")
 }
+// when scroll toggle active class ---------------
 
 window.onscroll = ()=>{
     sections.forEach(sec=> {
@@ -27,4 +34,29 @@ window.onscroll = ()=>{
     })
 }
 
+// work box mouse event work -----------------
 
+for (let works of work){
+    works.addEventListener('mouseenter',()=>{
+        works.style.background = "green";
+    })
+    works.addEventListener('mouseleave',()=>{
+        works.style.background = "rgb(255, 0, 43)";
+    })
+}
+
+// service box mouse event js---------------
+
+servicesBox.addEventListener('mouseenter',()=>{
+    servicesBox.style.background = "green";
+})
+servicesBox.addEventListener('mouseleave',()=>{
+    servicesBox.style.background = "rgb(253, 2, 44)";
+})
+
+// watch show -------------
+
+setInterval(()=>{
+    let time = new Date().toLocaleString();
+    watch.innerHTML = time;
+},1000)
