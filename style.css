@@ -114,6 +114,8 @@ nav ul li a.active::after{
     animation: animate 10s linear infinite;
 }
 .header-text #watch{
+    font-weight: 300;
+    letter-spacing: 4px;
     font-size: 30px;
     cursor: pointer;
     text-shadow: none;

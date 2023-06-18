@@ -40,7 +40,8 @@ window.onscroll = ()=>{
 
 for (let works of work){
     works.addEventListener('mouseenter',()=>{
-        works.style.background = "green";
+        let color = randomColor();
+        works.style.background = color;
     })
     works.addEventListener('mouseleave',()=>{
         works.style.background = "rgb(255, 0, 43)";
@@ -48,9 +49,15 @@ for (let works of work){
 }
 
 // service box mouse event js---------------
+const colors = ['#76D7C4', '#ffff00', '#ff00f3', '#66ff00', '#16bffd','#F1C40F '];
+
+function randomColor() {
+    return colors[Math.floor(Math.random() * colors.length)];
+}
 
 servicesBox.addEventListener('mouseenter',()=>{
-    servicesBox.style.background = "green";
+    let color = randomColor();
+    servicesBox.style.background = color;
 })
 servicesBox.addEventListener('mouseleave',()=>{
     servicesBox.style.background = "rgb(253, 2, 44)";
