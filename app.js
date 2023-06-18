@@ -44,7 +44,7 @@ for (let works of work){
         works.style.background = color;
     })
     works.addEventListener('mouseleave',()=>{
-        works.style.background = "rgb(255, 0, 43)";
+        works.style.background = "rgb(56, 52, 52)";
     })
 }
 
@@ -60,7 +60,7 @@ servicesBox.addEventListener('mouseenter',()=>{
     servicesBox.style.background = color;
 })
 servicesBox.addEventListener('mouseleave',()=>{
-    servicesBox.style.background = "rgb(253, 2, 44)";
+    servicesBox.style.background = "rgb(56, 52, 52)";
 })
 
 // watch show -------------
