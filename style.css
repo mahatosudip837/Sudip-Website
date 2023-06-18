@@ -270,7 +270,6 @@ nav .fa-solid{
 }
 .work-list .work:hover{
     transform: scale(1.1);
-    /* background: rgb(255, 0, 43); */
 }
 .git{
     margin-top: 40px;
