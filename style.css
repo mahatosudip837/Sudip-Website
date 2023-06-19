@@ -105,14 +105,15 @@ nav ul li a.active::after{
 }
 .header-text p{
     font-weight: 500;
+    font-size: 2rem;
 }
 .header-text h1{
-    font-size: 60px;
-    margin-top: 20px;
+    font-size: 4rem;
+    margin-top: 10px;
 }
 .header-text h1 span{
     text-shadow: none;
-    font-size: 70px;
+    font-size: 5rem;
     font-weight: 700;
     padding: 10px;
     background: linear-gradient(45deg, #ff0000, #ffff00, #ff00f3, #66ff00, #16bffd,#a80077);
