@@ -21,12 +21,15 @@ body{
     margin-top: 10px;
 }
 #header{
+    position: relative;
     width: 100%;
+    border-bottom: 1px solid #fff;
     min-height: 100vh;
     background: url("images/bg.jpg");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    z-index: 1;
 }
 .open,.close{
     font-size: 40px;
@@ -467,19 +470,25 @@ form textarea{
         padding: 10px;
     }
 }
-@media screen and (max-width:618px){
+@media screen and (max-width:638px){
     .header-text{
-        font-size: 20px;
-        padding-top: 47%;
+        font-size: 35px;
+        padding-top: 30%;
+        padding-left: 15%;
     }  
     .header-text h1{
         font-size: 20px;
+        line-height: 1.5;
     } 
-    #header{
-        padding-bottom: 40px;
-        background: url('https://cache.careers360.mobi/media/presets/860X430/article_images/2022/6/7/Advanced-Front-End-Web-Development-with-React-by-Coding-Ninjas.webp');
-        background-size: cover;
-        background-position: center;
+    #header::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background: #0a0000;
+        z-index: -1;
     }
     .header-text #watch{
         font-size: 16px;
