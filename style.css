@@ -104,8 +104,16 @@ nav ul li a.active::after{
     transition: .5s;
 }
 .header-text p{
-    font-weight: 500;
+    text-shadow: none;
     font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #000000;
+    color: transparent;
+    background: url(./images/back.png);
+    -webkit-background-clip: text;
+    background-position: 0;
+    animation: text 20s linear infinite;
 }
 .header-text h1{
     font-size: 4rem;
@@ -473,14 +481,20 @@ form textarea{
 }
 @media screen and (max-width:638px){
     .header-text{
+        padding: 115px 0 80px;
         font-size: 35px;
-        padding-top: 30%;
-        padding-left: 15%;
+        display: grid;
+        place-items: center;
     }  
     .header-text h1{
         font-size: 20px;
         line-height: 1.5;
     } 
+    .header-text p{
+        font-weight: 300;
+        text-transform: capitalize;
+    }
+
     #header::after{
         content: '';
         position: absolute;
