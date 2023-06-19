@@ -483,6 +483,11 @@ form textarea{
         padding: 10px;
     }
 }
+@media screen and (max-width:714px){
+    .contact-left,.contact-right{
+        flex-basis: 100%;
+    }
+}
 @media screen and (max-width:638px){
     .header-text{
         padding: 115px 0 80px;
