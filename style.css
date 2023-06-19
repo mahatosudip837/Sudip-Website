@@ -44,10 +44,14 @@ nav{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    backdrop-filter: blur(7px);
     padding: 10px 10%;
     z-index: 1000;
+    transition: all .5s ease;
+}
+nav.sticky{
     border-bottom: 1px solid #fff;
+    backdrop-filter: blur(7px);
+    padding: 5px 10%;
 }
 .logo{
     cursor: pointer;

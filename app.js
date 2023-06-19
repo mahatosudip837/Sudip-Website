@@ -10,7 +10,7 @@ const watch = document.querySelector('#watch');
 const tablinks = document.getElementsByClassName("tab-links");
 const tabcontents = document.getElementsByClassName("tab-contents");
 const headerText = document.getElementById('header-text');
-
+const nav = document.querySelector('nav')
 // navbar responsive ----------------------
 
 openMenu.addEventListener('click',()=>{
@@ -35,6 +35,7 @@ window.onscroll = ()=>{
             })
         }
     })
+    nav.classList.toggle('sticky',window.scrollY > 100);
 }
 
 // work box mouse event work -----------------
