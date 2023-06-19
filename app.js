@@ -36,6 +36,8 @@ window.onscroll = ()=>{
         }
     })
     nav.classList.toggle('sticky',window.scrollY > 100);
+    navbar.classList.remove('active');
+
 }
 
 // work box mouse event work -----------------
