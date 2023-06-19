@@ -9,6 +9,7 @@ const servicesBox = document.querySelector('.services-box');
 const watch = document.querySelector('#watch');
 const tablinks = document.getElementsByClassName("tab-links");
 const tabcontents = document.getElementsByClassName("tab-contents");
+const headerText = document.getElementById('header-text');
 
 // navbar responsive ----------------------
 
@@ -49,7 +50,7 @@ for (let works of work){
 }
 
 // service box mouse event js---------------
-const colors = ['#76D7C4', '#ffff00', '#ff00f3', '#66ff00', '#16bffd','#F1C40F '];
+const colors = ['#00FF00', '#FFFF00', '#FF7F00', '#9400D3', '#4B0082','#0000FF'];
 
 function randomColor() {
     return colors[Math.floor(Math.random() * colors.length)];
@@ -64,13 +65,10 @@ servicesBox.addEventListener('mouseleave',()=>{
 })
 
 // watch show -------------
-const showdate = ()=>{
     setInterval(()=>{
         let time = new Date().toLocaleString();
         watch.innerHTML = time;
     },1000)
-}
-watch.addEventListener('click',showdate);
 
 // skill section -------------------
 
@@ -84,3 +82,9 @@ function opentab(tabname){
     event.currentTarget.classList.add("active-link");
     document.getElementById(tabname).classList.add("active-tab")
 }
+
+// headerText-------------
+setTimeout(()=>{
+    headerText.style.opacity = "1";
+    headerText.style.transform ="translateY(0)"
+},1000);
