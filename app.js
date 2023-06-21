@@ -10,7 +10,8 @@ const watch = document.querySelector('#watch');
 const tablinks = document.getElementsByClassName("tab-links");
 const tabcontents = document.getElementsByClassName("tab-contents");
 const headerText = document.getElementById('header-text');
-const nav = document.querySelector('nav')
+const nav = document.querySelector('nav');
+const arryIcon =document.querySelector('.up-icon .up');
 // navbar responsive ----------------------
 
 openMenu.addEventListener('click',()=>{
@@ -37,6 +38,8 @@ window.onscroll = ()=>{
     })
     nav.classList.toggle('sticky',window.scrollY > 100);
     navbar.classList.remove('active');
+    arryIcon.classList.toggle('active',window.scrollY > 200);
+
 
 }
 
