@@ -13,10 +13,9 @@ body{
 }
 .newBtn{
     border: 1px solid #fff;
-    box-shadow: 5px 5px 5px rgba(0,0,0,.5);
     border-radius: 15px;
     outline: none;
-    background: #ffffff70;
+    background: #00000054;
     backdrop-filter: blue(8px);
     margin-top: 10px;
 }
@@ -85,7 +84,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: rgb(0, 81, 255);
+    background: rgb(208, 255, 0);
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -96,7 +95,7 @@ nav ul li a:hover::after,
 nav ul li a.active,
 nav ul li a.active::after{
     width: 100%;
-    color: rgb(0, 81, 255);
+    color: rgb(238, 255, 0);
 }
 .header-text{
     padding: 20% 0;
