@@ -36,7 +36,7 @@ window.onscroll = ()=>{
             })
         }
     })
-    nav.classList.toggle('sticky',window.scrollY > 100);
+    nav.classList.toggle('sticky',window.scrollY > 50);
     navbar.classList.remove('active');
     arryIcon.classList.toggle('active',window.scrollY > 200);
 
