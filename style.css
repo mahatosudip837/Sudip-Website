@@ -233,6 +233,7 @@ nav .fa-solid{
 }
 .tab-contents.active-tab{
     display: block;
+    padding: 0 10px;
 }
 .fresher p{
     font-size: 60px;
@@ -351,6 +352,9 @@ nav .fa-solid{
 }
 .contact-left p{
     margin-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 .contact-left p i{
     color: rgb(255, 0, 43);
@@ -490,7 +494,7 @@ form textarea{
         padding: 10px;
     }
 }
-@media screen and (max-width:714px){
+@media screen and (max-width:825px){
     .contact-left,.contact-right{
         flex-basis: 100%;
     }
@@ -508,10 +512,12 @@ form textarea{
     .header-text h1{
         font-size: 20px;
         line-height: 1.5;
+        text-align: center;
     } 
     .header-text p{
         font-weight: 300;
         text-transform: capitalize;
+        text-align: center;
     }
 
     #header::after{
