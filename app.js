@@ -94,3 +94,15 @@ setTimeout(()=>{
     headerText.style.opacity = "1";
     headerText.style.transform ="translateY(0)"
 },1000);
+
+// dayNight --------------
+function dayNight(){
+    let dayIcon = document.querySelector('.fa-sun');
+    dayIcon.classList.toggle('fa-moon');
+    let body = document.querySelector('body');
+    body.classList.toggle('active');
+    document.getElementById('about').classList.toggle("active");
+    document.querySelector('.services-list').classList.toggle('active');
+    document.querySelector('.work-list').classList.toggle('active');
+    document.querySelector('.contact-left').classList.toggle('active');
+}
