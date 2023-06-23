@@ -109,5 +109,10 @@ function dayNight(){
     navbar.classList.toggle('back');
     document.querySelector('.up').classList.toggle('back');
     document.getElementById('copyright').classList.toggle('active');
+    document.querySelectorAll('form input').forEach(elem =>{
+        elem.classList.toggle('active')
+    });
+
+    document.querySelector('form textarea').classList.toggle('active')
 
 }
