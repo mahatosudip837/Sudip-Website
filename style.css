@@ -452,6 +452,10 @@ form textarea{
     border-radius: 50%;
     color: #fff;
 }
+.day i.fa-moon{
+    color: #000;
+    border: 1px solid #000;
+}
 .up-icon a{
     color: #fff;
 }
