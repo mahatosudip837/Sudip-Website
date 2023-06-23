@@ -430,6 +430,9 @@ form textarea{
     font-weight: 300;
     margin-top: 20px;
 }
+#copyright.active{
+    background: #ada9a9;
+}
 .day{
     position: absolute;
     top: 10px;
@@ -462,6 +465,10 @@ form textarea{
     padding: 5px;
     background: #fff;
     z-index: 1000;
+}
+.up-icon .up.back{
+    background: #000;
+    color: #fff;
 }
 @media screen and (min-width:638px){
     #header::after{
@@ -508,6 +515,9 @@ form textarea{
         background: #000;
         transform: translateX(100%);
         transition: all .5s ease;
+    }
+    nav ul.back{
+        background: #8d8787;
     }
     nav ul li a{
         color: #fff;
@@ -568,8 +578,11 @@ form textarea{
         top: 0;
         height: 100%;
         width: 100%;
-        background: #0a0000;
+        background: #000;
         z-index: -1;
+    }
+    #header.active::after{
+        background: #fff;
     }
     .header-text #watch{
         font-size: 16px;

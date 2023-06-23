@@ -1,4 +1,4 @@
-// alert("lets see sudip mahato portfolio");
+
 const openMenu = document.querySelector('.open');
 const closeMenu =document.querySelector('.close');
 const navbar = document.querySelector('nav ul');
@@ -105,4 +105,9 @@ function dayNight(){
     document.querySelector('.services-list').classList.toggle('active');
     document.querySelector('.work-list').classList.toggle('active');
     document.querySelector('.contact-left').classList.toggle('active');
+    document.getElementById('header').classList.toggle('active');
+    navbar.classList.toggle('back');
+    document.querySelector('.up').classList.toggle('back');
+    document.getElementById('copyright').classList.toggle('active');
+
 }
