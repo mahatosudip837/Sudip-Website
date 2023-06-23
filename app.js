@@ -113,6 +113,12 @@ function dayNight(){
         elem.classList.toggle('active')
     });
 
-    document.querySelector('form textarea').classList.toggle('active')
+    document.querySelector('form textarea').classList.toggle('active');
+    document.querySelector('.open').classList.toggle('active');
+    document.querySelector('.logo').classList.toggle('active');
+    for(let navlink of navlinks){
+        navlink.classList.toggle('back')
+    };
+    nav.classList.toggle('back')
 
 }

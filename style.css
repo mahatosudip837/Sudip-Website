@@ -33,6 +33,9 @@ body.active{
     background-attachment: fixed;
     z-index: 1;
 }
+.open.active{
+    color: #000;
+}
 .open,.close{
     font-size: 40px;
     color: #fff;
@@ -56,6 +59,10 @@ nav.sticky{
     border-bottom: 1px solid #fff;
     padding: 5px 10%;
 }
+.logoo{
+    display: flex;
+    gap: 10px;
+}
 .logo{
     cursor: pointer;
     font-size: 3rem;
@@ -68,10 +75,16 @@ nav.sticky{
     background-position: 0;
     animation: text 20s linear infinite;
 }
+.logo.active{
+    -webkit-text-stroke: 1px #000;
+}
 @keyframes text{
     100%{
         background-position: 2000px;
     }
+}
+nav.sticky.back{
+    background: #ffffff71;
 }
 nav ul li{
     display: inline-block;
@@ -82,7 +95,11 @@ nav ul li a{
     color: #ffff;
     text-decoration: none;
     font-size: 18px;
+    font-weight: 700;
     position: relative;
+}
+nav ul li a.back{
+    color: #000;
 }
 nav ul li a::after{
     content: '';
@@ -440,12 +457,8 @@ form textarea{
 #copyright.active{
     background: #ada9a9;
 }
-.day{
-    position: absolute;
-    top: 10px;
-    left: 10px;
-}
 .day i{
+    cursor: pointer;
     font-size: 30px;
     border: 1px solid #fff;
     padding: 10px;
@@ -490,8 +503,11 @@ form textarea{
         width: 100%;
         height: 100%;
         background: #000;
-        opacity: 0.3;
+        opacity: 0.7;
         z-index: -1;
+    }
+    #header.active::after{
+        background: transparent;
     }
 }
 @media screen and (max-width:1228px){
@@ -597,6 +613,7 @@ form textarea{
     }
     .day i{
         font-size: 20px;
+        padding: 6px;
     }
     .header-text #watch{
         font-size: 16px;
