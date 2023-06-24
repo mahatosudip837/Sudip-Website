@@ -56,19 +56,19 @@ for (let works of work){
 }
 
 // service box mouse event js---------------
-const colors = ['#00FF00', '#FFFF00', '#FF7F00', '#9400D3', '#4B0082','#0000FF'];
+// const colors = ['#00FF00', '#FFFF00', '#FF7F00', '#9400D3', '#4B0082','#0000FF'];
 
-function randomColor() {
-    return colors[Math.floor(Math.random() * colors.length)];
-}
+// function randomColor() {
+//     return colors[Math.floor(Math.random() * colors.length)];
+// }
 
-servicesBox.addEventListener('mouseenter',()=>{
-    let color = randomColor();
-    servicesBox.style.background = color;
-})
-servicesBox.addEventListener('mouseleave',()=>{
-    servicesBox.style.background = "rgb(56, 52, 52)";
-})
+// servicesBox.addEventListener('mouseenter',()=>{
+//     let color = randomColor();
+//     servicesBox.style.background = color;
+// })
+// servicesBox.addEventListener('mouseleave',()=>{
+//     servicesBox.style.background = "rgb(56, 52, 52)";
+// })
 
 // watch show -------------
     setInterval(()=>{

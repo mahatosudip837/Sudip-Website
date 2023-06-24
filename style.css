@@ -61,7 +61,7 @@ nav.sticky{
 }
 .logoo{
     display: flex;
-    gap: 10px;
+    gap: 15px;
 }
 .logo{
     cursor: pointer;
@@ -289,11 +289,43 @@ nav .fa-solid{
     color: #fff;
 }
 .services-list .services-box{
-    background: rgb(56, 52, 52);
+    position: relative;
+    background: #262626;
     padding: 40px;
     font-size: 300;
     border-radius: 15px;
     transition: all .5s ease;
+}
+.services-list .services-box::after,
+.services-list .services-box::before,
+.work::after,
+.work::before{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    background: linear-gradient(45deg, #ff0000, #ffff00, #ff00f3, #66ff00, #16bffd,#a80077);
+    background-size: 400%;
+    border-radius: 15px;
+    z-index: -1;
+    animation: animate-shadow 10s linear infinite alternate;
+}
+.services-list .services-box::after,
+.work::after{
+    filter: blur(30px);
+}
+@keyframes animate-shadow{
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 100% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
 }
 .services-list .services-box i{
     font-size: 50px;
@@ -330,6 +362,7 @@ nav .fa-solid{
     color: #fff;
 }
 .work-list .work{
+    position: relative;
     background: rgb(56, 52, 52);
     padding: 40px;
     font-size: 300;
@@ -460,14 +493,12 @@ form textarea{
 .day i{
     cursor: pointer;
     font-size: 30px;
-    border: 1px solid #fff;
     padding: 10px;
     border-radius: 50%;
     color: #fff;
 }
 .day i.fa-moon{
     color: #000;
-    border: 1px solid #000;
 }
 .up-icon a{
     color: #fff;
