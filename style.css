@@ -467,6 +467,7 @@ form input,form textarea{
 form input.active,
 form textarea.active{
     background: #ebebeb;
+    color: #000;
 }
 form input.active:last-child{
     background: red;
