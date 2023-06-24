@@ -310,7 +310,7 @@ nav .fa-solid{
     background-size: 400%;
     border-radius: 15px;
     z-index: -1;
-    animation: animate-shadow 10s linear infinite alternate;
+    animation: animate-shadow 4s linear infinite alternate;
 }
 .services-list .services-box::after,
 .work::after{
