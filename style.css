@@ -471,6 +471,7 @@ form textarea.active{
 }
 form input.active:last-child{
     background: red;
+    color: #fff;
 }
 form textarea{
     resize: none;
