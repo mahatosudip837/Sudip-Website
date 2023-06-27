@@ -16,7 +16,8 @@ const btn =document.getElementById('btn');
 
 // dynamik website create ---------------
 btn.addEventListener('click',()=>{
-    document.querySelector('.fa-toggle-off').classList.toggle('fa-toggle-on')
+    document.querySelector('.fa-toggle-off').classList.toggle('fa-toggle-on');
+    btn.classList.toggle('fa-shake');
     work.forEach(item =>{
     item.classList.toggle('fa-shake');
     });
