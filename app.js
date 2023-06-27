@@ -26,6 +26,7 @@ btn.addEventListener('click',()=>{
     document.querySelector('.day i').classList.toggle('fa-bounce');
     openMenu.classList.toggle('fa-spin');
     closeMenu.classList.toggle('fa-spin');
+    closeMenu.classList.toggle('fa-spin-reverse');
     document.querySelector('.about-col-1').classList.toggle('fa-flip');
     document.querySelectorAll('.sub-title').forEach(elem =>{
         elem.classList.toggle('fa-bounce');
