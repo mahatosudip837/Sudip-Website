@@ -33,6 +33,7 @@ btn.addEventListener('click',()=>{
     });
     document.querySelector('.fresher').classList.toggle('fa-flip');
     document.querySelector('#skills').classList.toggle('fa-shake');
+    document.querySelector('#education').classList.toggle('fa-shake');
     document.querySelector('.fa-github').classList.toggle('fa-spin');
     document.querySelector('.fa-envelope').classList.toggle('fa-spin');
     document.querySelector('.fa-phone').classList.toggle('fa-spin');
