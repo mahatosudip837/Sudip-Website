@@ -12,6 +12,28 @@ const tabcontents = document.getElementsByClassName("tab-contents");
 const headerText = document.getElementById('header-text');
 const nav = document.querySelector('nav');
 const arryIcon =document.querySelector('.up-icon .up');
+// const header =document.querySelector('#header img');
+
+
+// fa-beat class add ----------
+work.forEach(item =>{
+    item.classList.add('fa-shake');
+});
+
+servicesBox.classList.add('fa-beat')
+
+// bg img change ------------------
+
+// function firstImg(){
+//     header.src = "images/bg1.jpg";
+// };
+// function secondImg(){
+//     header.src = "images/bg2.jpg";
+// };
+// setInterval(secondImg,2000);
+// setInterval(firstImg,5000);
+
+
 // navbar responsive ----------------------
 
 openMenu.addEventListener('click',()=>{
@@ -119,6 +141,7 @@ function dayNight(){
     for(let navlink of navlinks){
         navlink.classList.toggle('back')
     };
-    nav.classList.toggle('back')
+    nav.classList.toggle('back');
+    // header.classList.toggle('active');
 
 }

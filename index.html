@@ -1,168 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/5cac7ad27a.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <title>Sudip Mahato Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <section id="header">
-        <div class="container">
-            <nav>
-                <div class="logoo">
-                    <h1 class="logo">Sudip</h1>
-                    <div class="day" onclick="dayNight()">
-                        <i class="fa-regular fa-sun"></i>
-                    </div>
-                </div>
-                <ion-icon name="menu-outline" class="open"></ion-icon>
-                <ul>
-                    <ion-icon name="close-outline" class="close"></ion-icon>
-                    <li><a href="#header" class="active">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#porject">Project</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="header-text" id="header-text">
-                <p>Frontend Developer</p>
-                <h1>Hi, I'm <span>Sudip Mahato</span><br> From West Bengal</h1>
-                <button class="newBtn"><h3 id="watch"></h3></button>
+      <!-- <img src="./images/bg1.jpg" alt="" /> -->
+      <div class="container">
+        <nav>
+          <div class="logoo">
+            <h1 class="logo fa-bounce">Sudip</h1>
+            <div class="day" onclick="dayNight()">
+                <i class="fa-regular fa-sun fa-flip"></i>
             </div>
+          </div>
+          <ion-icon name="menu-outline" class="open"></ion-icon>
+          <ul>
+            <ion-icon name="close-outline" class="close"></ion-icon>
+            <li><a href="#header" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#porject">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text fa-fade" id="header-text">
+          <p>Frontend Developer</p>
+          <h1>
+            Hi, I'm <span>Sudip Mahato</span><br />
+            From West Bengal
+          </h1>
+          <button class="newBtn"><h3 id="watch"></h3></button>
         </div>
-        <div class="up-icon">
-            <a href="#header"><ion-icon name="arrow-up-outline" class="up"></ion-icon></a>
-        </div>
+      </div>
+      <div class="up-icon">
+        <a href="#header"
+          ><ion-icon name="arrow-up-outline" class="up fa-spin"></ion-icon
+        ></a>
+      </div>
     </section>
     <!------------------about-------------->
     <section id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/profile.jpg" alt="">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>My Name is Sudip Mahato.I am a Frontend Developer. My address is Vill-Jorobari,Dist-Purulia,State-West-Bengal,Pin-723131.Date of Birth 12/02/2001.My hobby is playing cricket, playing mobile games,listion audio story</p>
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/profile.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title fa-bounce">About Me</h1>
+            <p>
+              My Name is Sudip Mahato.I am a Frontend Developer. My address is
+              Vill-Jorobari,Dist-Purulia,State-West-Bengal,Pin-723131.Date of
+              Birth 12/02/2001.My hobby is playing cricket, playing mobile
+              games,listion audio story
+            </p>
 
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="experience">
-                        <ul>
-                            <li class="fresher"><p>Fresher</p></li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="skills">
-                        <ul>
-                            <li><span>HTML</span><br>80%</li>
-                            <li><span>CSS</span><br>70%</li>
-                            <li><span>JavaScript</span><br>60%</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>B.Tech-Computer Science Engineering,BITM Collage,Bolpur <br>2018-2022</span><br>8.38</li>
-                            <li><span>HS-Alijhara High School,Bankura <br>2016-2018</span><br>67%</li>
-                            <li><span>Madyamik-VSNHS,Bankura <br>2016</span><br>73%</li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
             </div>
+            <div class="tab-contents active-tab" id="experience">
+              <ul>
+                <li class="fresher fa-flip"><p>Fresher</p></li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="skills">
+              <ul>
+                <li><span>HTML</span><br />80%</li>
+                <li><span>CSS</span><br />70%</li>
+                <li><span>JavaScript</span><br />60%</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span
+                    >B.Tech-Computer Science Engineering,BITM Collage,Bolpur
+                    <br />2018-2022</span
+                  ><br />8.38
+                </li>
+                <li>
+                  <span>HS-Alijhara High School,Bankura <br />2016-2018</span
+                  ><br />67%
+                </li>
+                <li>
+                  <span>Madyamik-VSNHS,Bankura <br />2016</span><br />73%
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- ----------services-------------- -->
     <section id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>   
-            <div class="services-list">
-                <div class="services-box">
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web Design</h2>
-                    <p>Creative Website Design</p>
-                    <a href="">Learn More</a>
-                </div>
-            </div>
+      <div class="container">
+        <h1 class="sub-title fa-bounce">My Services</h1>
+        <div class="services-list">
+          <div class="services-box">
+            <i class="fa-solid fa-code fa-bounce"></i>
+            <h2>Web Design</h2>
+            <p>Creative Website Design</p>
+            <a href="">Learn More</a>
+          </div>
         </div>
+      </div>
     </section>
     <!-- ------portfolio---------- -->
     <section id="porject">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <h2>Astro Remedy Website</h2>
-                    <a href="https://mahatosudip837.github.io/astro/" target="_blank">Visit</a>
-                </div>
-                <div class="work">
-                    <h2>Food Delivery Website</h2>
-                    <a href="https://mahatosudip837.github.io/Food-delivery-website/" target="_blank">Visit</a>
-                </div>
-                <div class="work">
-                    <h2>Hiking Life Website</h2>
-                    <a href="https://mahatosudip837.github.io/hiking-life-website/" target="_blank">Visit</a>
-                </div>
-                <div class="work">
-                    <h2>Italian Food Delivery Website</h2>
-                    <a href="https://mahatosudip837.github.io/italian-food-website/" target="_blank">Visit</a>
-                </div>
-                <div class="work">
-                    <h2>Halloween Website</h2>
-                    <a href="https://mahatosudip837.github.io/halloween-website/" target="_blank">Visit</a>
-                </div>
-                <div class="work">
-                    <h2>Bootstrap project</h2>
-                    <a href="https://mahatosudip837.github.io/bootstrap-project/" target="_blank">Visit</a>
-                </div>
-            </div>
-            <button class="btn git"><a href="https://github.com/mahatosudip837" target="_blank">See More Project In My GitHub Page <i class="fa-brands fa-github"></i></a></button>
+      <div class="container">
+        <h1 class="sub-title fa-bounce">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <h2>Astro Remedy Website</h2>
+            <a href="https://mahatosudip837.github.io/astro/" target="_blank"
+              >Visit</a
+            >
+          </div>
+          <div class="work">
+            <h2>Food Delivery Website</h2>
+            <a
+              href="https://mahatosudip837.github.io/Food-delivery-website/"
+              target="_blank"
+              >Visit</a
+            >
+          </div>
+          <div class="work">
+            <h2>Hiking Life Website</h2>
+            <a
+              href="https://mahatosudip837.github.io/hiking-life-website/"
+              target="_blank"
+              >Visit</a
+            >
+          </div>
+          <div class="work">
+            <h2>Italian Food Delivery Website</h2>
+            <a
+              href="https://mahatosudip837.github.io/italian-food-website/"
+              target="_blank"
+              >Visit</a
+            >
+          </div>
+          <div class="work">
+            <h2>Halloween Website</h2>
+            <a
+              href="https://mahatosudip837.github.io/halloween-website/"
+              target="_blank"
+              >Visit</a
+            >
+          </div>
+          <div class="work">
+            <h2>Bootstrap project</h2>
+            <a
+              href="https://mahatosudip837.github.io/bootstrap-project/"
+              target="_blank"
+              >Visit</a
+            >
+          </div>
         </div>
+        <button class="btn git">
+          <a href="https://github.com/mahatosudip837" target="_blank"
+            >See More Project In My GitHub Page
+            <i class="fa-brands fa-github fa-spin"></i
+          ></a>
+        </button>
+      </div>
     </section>
 
     <!-- --contact------ -->
     <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-envelope"></i>mahatosudip837@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i>+917384958679</p>
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/profile.php?id=100008458304867" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://twitter.com/sudipmahato2001" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
-                        <a href="https://www.instagram.com/sudiipmahato/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/sudip-mahato-963342121/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    </div>
-                    <a href="./images/Sudip Mahato CV.pdf" download target="_blank" class="btn">Download CV</a>
-                </div>
-                <div class="contact-right">
-                    <form onsubmit="validateForm()">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <textarea name="massage" rows="6" placeholder="Your Massage"></textarea>
-                        <input type="submit" value="Submit" class="btn btn2">
-                    </form>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title fa-bounce">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i>mahatosudip837@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>+917384958679</p>
+            <div class="social-icons">
+              <a
+                href="https://www.facebook.com/profile.php?id=100008458304867"
+                target="_blank"
+                ><i class="fa-brands fa-facebook fa-spin"></i></a>
+              <a href="https://twitter.com/sudipmahato2001" target="_blank"
+                ><i class="fa-brands fa-twitter-square fa-spin fa-spin-reverse"></i
+              ></a>
+              <a href="https://www.instagram.com/sudiipmahato/" target="_blank"
+                ><i class="fa-brands fa-instagram fa-flip"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/sudip-mahato-963342121/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin fa-bounce"></i
+              ></a>
             </div>
+            <a
+              href="./images/Sudip Mahato CV.pdf"
+              download
+              target="_blank"
+              class="btn"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form onsubmit="validateForm()">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="massage"
+                rows="6"
+                placeholder="Your Massage"
+              ></textarea>
+              <input type="submit" value="Submit" class="btn btn2" />
+            </form>
+          </div>
         </div>
+      </div>
     </section>
     <!-- --------footer--------- -->
     <footer id="copyright">
-        <p>Copyright &copy Sudip 2023 </p>
+      <p>Copyright &copy Sudip 2023</p>
     </footer>
 
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> 
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script
+      src="https://kit.fontawesome.com/5cac7ad27a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
