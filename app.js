@@ -78,11 +78,11 @@ for (let works of work){
 }
 
 // service box mouse event js---------------
-// const colors = ['#00FF00', '#FFFF00', '#FF7F00', '#9400D3', '#4B0082','#0000FF'];
+const colors = ['#00FF00', '#FFFF00', '#FF7F00', '#9400D3', '#4B0082','#0000FF'];
 
-// function randomColor() {
-//     return colors[Math.floor(Math.random() * colors.length)];
-// }
+function randomColor() {
+    return colors[Math.floor(Math.random() * colors.length)];
+}
 
 // servicesBox.addEventListener('mouseenter',()=>{
 //     let color = randomColor();
@@ -145,3 +145,13 @@ function dayNight(){
     // header.classList.toggle('active');
 
 }
+
+document.querySelectorAll('.btn').forEach(item =>{
+    item.addEventListener('mouseenter',()=>{
+        let color = randomColor();
+        item.style.background = color;
+    })
+    item.addEventListener('mouseleave',()=>{
+        item.style.background = "rgb(56, 52, 52)";
+    })
+});
