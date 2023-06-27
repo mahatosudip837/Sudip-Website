@@ -576,7 +576,7 @@ form textarea{
     #header.active::after{
         background: transparent;
     }
-@media screen and (max-width:1228px){
+@media screen and (max-width:1258px){
     .header-text h1{
         font-size: 45px;
     }
