@@ -508,6 +508,12 @@ form textarea{
     font-weight: 300;
     margin-top: 20px;
 }
+.copy-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
 #copyright.active{
     background: #ada9a9;
 }
