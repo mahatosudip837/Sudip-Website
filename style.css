@@ -26,6 +26,9 @@ body.active{
 #btn{
     cursor: pointer;
 }
+#btn i.active{
+    color: #000;
+}
 #header{
     position: relative;
     width: 100%;
@@ -85,6 +88,8 @@ nav.sticky{
 }
 .logoo{
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 15px;
 }
 .logo{
@@ -580,7 +585,7 @@ form textarea{
         font-size: 50px;
     }
 }
-@media screen and (max-width:922px){
+@media screen and (max-width:1012px){
     .header-text h1{
         font-size: 30px;
     }
