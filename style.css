@@ -114,6 +114,7 @@ nav.sticky{
 }
 nav.sticky.back{
     background: #ffffff71;
+    border-bottom: 1px solid #000;
 }
 nav ul li{
     display: inline-block;
@@ -561,7 +562,6 @@ form textarea{
     background: #000;
     color: #fff;
 }
-@media screen and (min-width:638px){
     #header::after{
         content: '';
         position: absolute;
@@ -576,7 +576,6 @@ form textarea{
     #header.active::after{
         background: transparent;
     }
-}
 @media screen and (max-width:1228px){
     .header-text h1{
         font-size: 45px;
@@ -645,9 +644,9 @@ form textarea{
     }
 }
 @media screen and (max-width:638px){
-    #header{
+    /* #header{
         border-bottom: 1px solid #fff;
-    }
+    } */
     .header-text{
         padding: 115px 0 80px;
         font-size: 35px;
@@ -665,7 +664,7 @@ form textarea{
         text-align: center;
     }
 
-    #header::after{
+    /* #header::after{
         content: '';
         position: absolute;
         left: 0;
@@ -674,10 +673,10 @@ form textarea{
         width: 100%;
         background: #000;
         z-index: -1;
-    }
-    #header.active::after{
+    } */
+    /* #header.active::after{
         background: #fff;
-    }
+    } */
     .day i{
         font-size: 20px;
         padding: 6px;
