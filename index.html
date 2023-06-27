@@ -10,6 +10,7 @@
       href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
       href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"
       rel="stylesheet"
@@ -23,14 +24,15 @@
       <div class="container">
         <nav>
           <div class="logoo">
-            <h1 class="logo fa-flip">Sudip</h1>
+            <h1 class="logo">Sudip</h1>
             <div class="day" onclick="dayNight()">
-                <i class="fa-regular fa-sun fa-bounce"></i>
+                <i class="fa fa-sun"></i>
             </div>
+            <div id="btn"><i class="fa fa-toggle-off"></i></div>
           </div>
-          <ion-icon name="menu-outline" class="open fa-spin"></ion-icon>
+          <ion-icon name="menu-outline" class="open"></ion-icon>
           <ul>
-            <ion-icon name="close-outline" class="close fa-spin"></ion-icon>
+            <ion-icon name="close-outline" class="close"></ion-icon>
             <li><a href="#header" class="active">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
@@ -38,7 +40,7 @@
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
-        <div class="header-text fa-fade" id="header-text">
+        <div class="header-text" id="header-text">
           <p>Frontend Developer</p>
           <h1>
             Hi, I'm <span>Sudip Mahato</span><br />
@@ -49,7 +51,7 @@
       </div>
       <div class="up-icon">
         <a href="#header"
-          ><ion-icon name="arrow-up-outline" class="up fa-spin"></ion-icon
+          ><ion-icon name="arrow-up-outline" class="up"></ion-icon
         ></a>
       </div>
     </section>
@@ -57,11 +59,11 @@
     <section id="about">
       <div class="container">
         <div class="row">
-          <div class="about-col-1 fa-flip">
+          <div class="about-col-1">
             <img src="images/profile.jpg" alt="" />
           </div>
           <div class="about-col-2">
-            <h1 class="sub-title fa-bounce">About Me</h1>
+            <h1 class="sub-title">About Me</h1>
             <p>
               My Name is Sudip Mahato.I am a Frontend Developer. My address is
               Vill-Jorobari,Dist-Purulia,State-West-Bengal,Pin-723131.Date of
@@ -78,10 +80,10 @@
             </div>
             <div class="tab-contents active-tab" id="experience">
               <ul>
-                <li class="fresher fa-flip"><p>Fresher</p></li>
+                <li class="fresher"><p>Fresher</p></li>
               </ul>
             </div>
-            <div class="tab-contents fa-shake" id="skills">
+            <div class="tab-contents" id="skills">
               <ul>
                 <li><span>HTML</span><br />80%</li>
                 <li><span>CSS</span><br />70%</li>
@@ -113,7 +115,7 @@
     <!-- ----------services-------------- -->
     <section id="services">
       <div class="container">
-        <h1 class="sub-title fa-bounce">My Services</h1>
+        <h1 class="sub-title">My Services</h1>
         <div class="services-list">
           <div class="services-box">
             <i class="fa-solid fa-code fa-bounce"></i>
@@ -127,7 +129,7 @@
     <!-- ------portfolio---------- -->
     <section id="porject">
       <div class="container">
-        <h1 class="sub-title fa-bounce">My Work</h1>
+        <h1 class="sub-title">My Work</h1>
         <div class="work-list">
           <div class="work">
             <h2>Astro Remedy Website</h2>
@@ -179,7 +181,7 @@
         <button class="btn git">
           <a href="https://github.com/mahatosudip837" target="_blank"
             >See More Project In My GitHub Page
-            <i class="fa-brands fa-github fa-spin"></i
+            <i class="fa-brands fa-github"></i
           ></a>
         </button>
       </div>
@@ -190,24 +192,24 @@
       <div class="container">
         <div class="row">
           <div class="contact-left">
-            <h1 class="sub-title fa-bounce">Contact Me</h1>
-            <p><i class="fa-solid fa-envelope fa-spin"></i>mahatosudip837@gmail.com</p>
-            <p><i class="fa-solid fa-phone fa-spin fa-spin-reverse"></i>+917384958679</p>
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i>mahatosudip837@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>+917384958679</p>
             <div class="social-icons">
               <a
                 href="https://www.facebook.com/profile.php?id=100008458304867"
                 target="_blank"
-                ><i class="fa-brands fa-facebook fa-spin"></i></a>
+                ><i class="fa-brands fa-facebook"></i></a>
               <a href="https://twitter.com/sudipmahato2001" target="_blank"
-                ><i class="fa-brands fa-twitter-square fa-spin fa-spin-reverse"></i
+                ><i class="fa-brands fa-twitter-square"></i
               ></a>
               <a href="https://www.instagram.com/sudiipmahato/" target="_blank"
-                ><i class="fa-brands fa-instagram fa-flip"></i
+                ><i class="fa-brands fa-instagram"></i
               ></a>
               <a
                 href="https://www.linkedin.com/in/sudip-mahato-963342121/"
                 target="_blank"
-                ><i class="fa-brands fa-linkedin fa-bounce"></i
+                ><i class="fa-brands fa-linkedin"></i
               ></a>
             </div>
             <a
@@ -241,7 +243,7 @@
     <!-- --------footer--------- -->
     <footer id="copyright">
       <div class="copy-text">
-        Copyright <div class="text fa-spin">&copy</div>Sudip 2023
+        Copyright <div class="texti">&copy</div>Sudip 2023
       </div>
     </footer>
 

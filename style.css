@@ -23,6 +23,9 @@ body.active{
     backdrop-filter: blue(8px);
     margin-top: 10px;
 }
+#btn{
+    cursor: pointer;
+}
 #header{
     position: relative;
     width: 100%;
@@ -517,7 +520,8 @@ form textarea{
 #copyright.active{
     background: #ada9a9;
 }
-.day i{
+.day i,
+#btn i{
     cursor: pointer;
     font-size: 30px;
     padding: 10px;

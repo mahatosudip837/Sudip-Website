@@ -12,15 +12,40 @@ const tabcontents = document.getElementsByClassName("tab-contents");
 const headerText = document.getElementById('header-text');
 const nav = document.querySelector('nav');
 const arryIcon =document.querySelector('.up-icon .up');
-// const header =document.querySelector('#header img');
+const btn =document.getElementById('btn');
 
+// dynamik website create ---------------
+btn.addEventListener('click',()=>{
+    document.querySelector('.fa-toggle-off').classList.toggle('fa-toggle-on')
+    work.forEach(item =>{
+    item.classList.toggle('fa-shake');
+    });
+    servicesBox.classList.toggle('fa-beat');
+    document.querySelector('.logo').classList.toggle('fa-flip');
+    document.querySelector('.day i').classList.toggle('fa-bounce');
+    openMenu.classList.toggle('fa-spin');
+    closeMenu.classList.toggle('fa-spin');
+    document.querySelector('.about-col-1').classList.toggle('fa-flip');
+    document.querySelectorAll('.sub-title').forEach(elem =>{
+        elem.classList.toggle('fa-bounce');
+    });
+    document.querySelector('.fresher').classList.toggle('fa-flip');
+    document.querySelector('#skills').classList.toggle('fa-shake');
+    document.querySelector('.fa-github').classList.toggle('fa-spin');
+    document.querySelector('.fa-envelope').classList.toggle('fa-spin');
+    document.querySelector('.fa-phone').classList.toggle('fa-spin');
+    document.querySelector('.fa-phone').classList.toggle('fa-spin-reverse');
+    document.querySelector('.fa-facebook').classList.toggle('fa-spin');
+    document.querySelector('.fa-instagram').classList.toggle('fa-flip');
+    document.querySelector('.fa-linkedin').classList.toggle('fa-bounce');
+    document.querySelector('.fa-twitter-square').classList.toggle('fa-spin');
+    document.querySelector('.fa-twitter-square').classList.toggle('fa-spin-reverse');
+    document.querySelector('.up').classList.toggle('fa-spin');
+    document.querySelector('.texti').classList.toggle('fa-spin');
 
-// fa-beat class add ----------
-work.forEach(item =>{
-    item.classList.add('fa-shake');
 });
 
-servicesBox.classList.add('fa-beat')
+
 
 // bg img change ------------------
 
@@ -120,7 +145,7 @@ setTimeout(()=>{
 // dayNight --------------
 function dayNight(){
     let dayIcon = document.querySelector('.fa-sun');
-    dayIcon.classList.toggle('fa-moon');
+    dayIcon.classList.toggle('fa-moon-o');
     let body = document.querySelector('body');
     body.classList.toggle('active');
     document.getElementById('about').classList.toggle("active");
