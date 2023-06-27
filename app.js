@@ -42,6 +42,7 @@ btn.addEventListener('click',()=>{
     document.querySelector('.fa-twitter-square').classList.toggle('fa-spin-reverse');
     document.querySelector('.up').classList.toggle('fa-spin');
     document.querySelector('.texti').classList.toggle('fa-spin');
+    document.querySelector('.fa-code').classList.toggle('fa-bounce');
 
 });
 
