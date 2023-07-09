@@ -290,9 +290,9 @@ nav .fa-solid{
     padding: 0 10px;
 }
 .fresher p{
-    font-size: 60px;
+    font-size: 26px;
     font-weight: 700;
-    margin-top: 40px;
+    margin-top: 20px;
     animation: rotate 1s linear infinite;
 }
 @keyframes rotate{
